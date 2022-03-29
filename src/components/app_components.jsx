@@ -1,5 +1,6 @@
-import React from 'react'
-import './styles/app_components.css'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './styles/app_components.css';
 
 function Header() {
   return (
@@ -11,6 +12,17 @@ function Header() {
   )
 }
 
+function Navbar(){
+  return(
+    <nav className='navbar'>
+      <NavLink to="/home" className='nav-item'>Home</NavLink>
+      <NavLink to="/about" className='nav-item'>About</NavLink>
+      <NavLink to="/articles" className='nav-item'>Articles</NavLink>
+    </nav>
+  )
+}
+
 export default {
-  Header
+  Header,
+  Navbar
 }

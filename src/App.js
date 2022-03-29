@@ -1,9 +1,17 @@
 import './App.css';
+import { Outlet } from 'react-router-dom';
 import Blocks from './components/app_components';
 
 function App() {
   return (
-   <Blocks.Header/>
+    <>
+   <div><Blocks.Header/></div>
+   <div className='nav-and-body-cont'>
+     <Blocks.Navbar/>
+    <Outlet/>
+   </div>
+
+   </>
   );
 }
 
