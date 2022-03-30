@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import About from './components/views/about';
-import Home from './components/views/home';
 import Articles from './components/views/articles';
-import Land_index from './components/views/land_index';
+import LandIndex from './components/views/land_index';
+import Article from './components/views/article';
+import Notfound from './components/views/notfound';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -14,13 +15,14 @@ ReactDOM.render(
   <React.StrictMode>
     <Routes>
       <Route path='/' element={<App/>}>
-        <Route index element={<Land_index/>}/>
-        <Route path='home' element={<Home/>}/>
+        <Route index path='/' element={<LandIndex/>}/>
         <Route path='about' element={<About/>}/>
         <Route path='articles' element={<Articles/>}/>
+        <Route path='articles/:articleId' element={<Article/>}/>
+        <Route path='*' element={<Notfound/>}/>   
       </Route>
     </Routes>
-  </React.StrictMode>,
+  </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')
 );

@@ -4,14 +4,15 @@ import Blocks from './components/app_components';
 
 function App() {
   return (
-    <>
+    <div className='app-page'>
    <div><Blocks.Header/></div>
    <div className='nav-and-body-cont'>
-     <Blocks.Navbar/>
+     <Blocks.Sidebar/>
     <Outlet/>
    </div>
+   <div><Blocks.Footer/></div>
 
-   </>
+   </div>
   );
 }
 

@@ -12,17 +12,35 @@ function Header() {
   )
 }
 
-function Navbar(){
+function Sidebar(){
   return(
-    <nav className='navbar'>
-      <NavLink to="/home" className='nav-item'>Home</NavLink>
-      <NavLink to="/about" className='nav-item'>About</NavLink>
-      <NavLink to="/articles" className='nav-item'>Articles</NavLink>
+    <nav className='sidebar'>
+      <NavLink to="/" className='nav-item'>
+      <i class="fa-solid fa-house"></i>
+        <p>Home</p>
+        </NavLink>
+      <NavLink to="/about" className='nav-item'>
+      <i class="fa-solid fa-user-group"></i>
+      <p>About</p>
+        </NavLink>
+      <NavLink to="/articles" className='nav-item'>
+      <i class="fa-solid fa-newspaper"></i>
+        <p>Articles</p>
+      </NavLink>
     </nav>
+  )
+}
+
+function Footer(){
+  return(
+    <footer>
+      <p className='foot-text'>Powered by KristalTasha</p>
+    </footer>
   )
 }
 
 export default {
   Header,
-  Navbar
+  Sidebar,
+  Footer
 }

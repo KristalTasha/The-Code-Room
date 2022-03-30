@@ -1,0 +1,24 @@
+.about-page{
+    width: 100%;
+    height: 20em;
+    display: flex;
+    gap: 5em;
+    padding: 1.5em;
+    justify-content: center;
+}
+
+.about-pic{
+    background-image: url('../../../public/images/talk.jpg');
+    background-size: cover;
+    width: 40%;
+}
+
+.about-text{
+    margin-top: 2em;
+    text-align: center;
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+}
