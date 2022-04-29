@@ -15,7 +15,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Routes>
       <Route path='/' element={<App/>}>
-        <Route index path='/' element={<LandIndex/>}/>
+        <Route index element={<LandIndex/>}/>
         <Route path='about' element={<About/>}/>
         <Route path='articles' element={<Articles/>}/>
         <Route path='articles/:articleId' element={<Article/>}/>

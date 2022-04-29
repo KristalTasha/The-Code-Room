@@ -1,22 +1,25 @@
 .land-index-page{
     width: 100%;
     height: 40em;
+    margin-left: 0.8em;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 20em 20em;
     /* grid-column-gap: 0.5em; */
     /* grid-row-gap: 2em; */
-    padding: 1em;
+    padding: 0.8em;
 }
 
 .frame-1{
     background-image: url('../../../public/images/code_room.jpg');
     background-size: cover;
+    border-top-left-radius: 5px;
 }
 
 .frame-3{
     background-image: url('../../../public/images/newspaper.jpg');
     background-size: cover;
+    border-top-right-radius: 5px;
 }
 
 .frame-5{
@@ -35,6 +38,16 @@
     padding: 1em;
     
 }
+
+.frame-4{
+    border-bottom-left-radius: 5px;
+}
+
+.frame-6{
+    border-bottom-right-radius: 5px;
+}
+
+
 
 .who{
     font-size: 2em;

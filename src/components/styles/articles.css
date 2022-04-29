@@ -42,6 +42,11 @@
     margin-bottom: 0.5em;
 }
 
+.card-img:hover{
+    transform: scale(1.05);
+}
+
+
 .articles-page{
     display: flex;
     flex-direction: column;
